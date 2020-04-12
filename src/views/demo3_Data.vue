@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="demo3">
     <h1>Data</h1>
     <button @click="count++;isLogged=true;">Count++</button>
     <span>{{ count }}</span>
@@ -10,8 +10,10 @@
     <div>{{account.username}} {{account.password}}</div>
     <div>{{courses[0]}}</div>
     <ul>
-      <li v-for="(item, index) in courses" :key="index">{{index+1}}. {{item}}</li>
+      <li class="content" v-for="(item, index) in courses" :key="index">{{index+1}}. {{item}}</li>
     </ul>
+
+    <span class="title">5555</span>
   </div>
 </template>
 
@@ -42,9 +44,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 li{
   color: red
 }
+
+.title{
+  color: brown
+}
+</style>
+
+<style>
+
 </style>
