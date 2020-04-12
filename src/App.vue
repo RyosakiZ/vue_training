@@ -4,6 +4,8 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/demo1">demo1</router-link></li>
       <li><router-link to="/demo2">demo2 Events</router-link></li>
+      <li><router-link to="/demo3">demo3 Data</router-link></li>
+
     </ul>
 
     <router-view></router-view>
