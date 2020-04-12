@@ -4,23 +4,30 @@
     <button v-on:click="clickMe">Click Me</button>
     <button v-on:click="clickMe2('Welcome to VueJS')">Click Me 2</button>
     <button @click="clickMe3('Welcome to CodeMobiles')">Click Me 3</button>
+    <h3>{{ getTimestamp() }}</h3>
   </div></template
 >
 
 <script>
 export default {
   name: "Demo2",
+  mounted() {
+    this.initial();
+  },
   methods: {
+    initial() {
+      console.log("Initialization");
+    },
     clickMe() {
       alert("Hi");
     },
     clickMe2(message) {
       alert(message);
     },
-    clickMe3(message) {
-      alert(message);
-    },
-  },
+    getTimestamp() {
+      return Date();
+    }
+  }
 };
 </script>
 
