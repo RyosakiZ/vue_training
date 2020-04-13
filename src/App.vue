@@ -6,12 +6,14 @@
       <li><router-link to="/demo2">demo2 Events</router-link></li>
       <li><router-link to="/demo3">demo3 Data</router-link></li>
       <li><router-link to="/demo4">demo4 Compute</router-link></li>
+      <li><router-link to="/demo5">demo5 Binding</router-link></li>
+
 
 
     </ul>
 
     <router-view></router-view>
-    <span class="title">123</span>
+    <span class="title">Copyright by me</span>
   </div>
 </template>
 
@@ -32,8 +34,8 @@ li {
 }
 
 .title{
-  font-size: 30px;
-  color: purple;
+  font-size: 15px;
+  color: grey;
 }
 </style>
 
