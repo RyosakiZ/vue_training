@@ -6,6 +6,7 @@ import demo2 from "../views/demo2_EventMethod.vue";
 import demo3 from "../views/demo3_Data.vue";
 import demo4 from "../views/demo4_Compute.vue";
 import demo5 from "../views/demo5_Binding.vue";
+import demo6 from "../views/demo6_Form.vue";
 
 
 
@@ -50,6 +51,11 @@ const routes = [
     path: "/demo5",
     name: "demo5",
     component: demo5, 
+  },
+  {
+    path: "/demo6",
+    name: "demo6",
+    component: demo6, 
   }
 ];
 

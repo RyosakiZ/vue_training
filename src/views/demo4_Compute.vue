@@ -12,7 +12,8 @@
       Random No. from computed property: {{ getrandomno }}
     </h1>
         <h1 style="background-color: grey;">
-      Random No. from computed property: {{ getrandomno }} <!-- ดึงค่าล่าสุดเสมอ -->
+      Random No. from computed property: {{ getrandomno }} 
+      <!-- ดึงค่าล่าสุดเสมอ (เปลี่ยนทุกค่าที่คิดก่อนหน้า เลยทำให้ค่าเหมือนกัน) -->
     </h1>
     <h1>Random No from method: {{ getrandomno1() }}</h1>
     <h1>Random No from method: {{ getrandomno1() }}</h1>
