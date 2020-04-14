@@ -10,19 +10,35 @@
       <li><router-link to="/demo5"><button>Demo5 Binding</button></router-link></li>
       <li><router-link to="/demo6"><button>Demo6 Form & V-Model</button></router-link></li>
     </ul> -->
-
     <router-view></router-view>
-    <span class="footer">Copyright 2020 by Puwit Chotikasatian</span>
+    <Footer @onClock="onClock" title="Copyright 2020 by Puwit Chotikasatian Ltd." color="black"/>
+    <div class="clock">{{time}}</div>
+    <!-- <span class="footer">Copyright 2020 by Puwit Chotikasatian</span> -->
+
   </div>
 </template>
 
 <script>
 import Header from "@/components/layout/Header.vue"
+import Footer from "@/components/layout/Footer.vue"
+import moment from "moment";
 
 export default {
   name: "app",
+  methods: {
+    onClock(value){
+      // this.time = value
+      this.time = moment(value).format('MM/DD/YYYY hh:mm:ss')
+    }
+  },
+  data(){
+    return{
+      time: ""
+    }
+  },
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>
