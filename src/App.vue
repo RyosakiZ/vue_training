@@ -10,7 +10,10 @@
       <li><router-link to="/demo5"><button>Demo5 Binding</button></router-link></li>
       <li><router-link to="/demo6"><button>Demo6 Form & V-Model</button></router-link></li>
     </ul> -->
+    <!-- <div class="content-wrapper">
     <router-view></router-view>
+    </div> -->
+    <Content />
     <Footer @onClock="onClock" title="Copyright 2020 by Puwit Chotikasatian Ltd." color="black"/>
     <div class="clock">{{time}}</div>
     <!-- <span class="footer">Copyright 2020 by Puwit Chotikasatian</span> -->
@@ -20,6 +23,7 @@
 
 <script>
 import Header from "@/components/layout/Header.vue"
+import Content from "@/components/layout/Content.vue"
 import Footer from "@/components/layout/Footer.vue"
 import moment from "moment";
 
@@ -38,6 +42,7 @@ export default {
   },
   components: {
     Header,
+    Content,
     Footer
   }
 };
@@ -57,6 +62,11 @@ li {
   font-size: 15px;
   color: grey;
 }
+
+.clock{
+  font-size: 12px;
+}
+
 </style>
 
 <style>

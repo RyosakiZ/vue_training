@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
     .footer{  
-        font-size: 12px;
+        font-size: 18px;
         color: black;
         padding-top: 16px;
     }
